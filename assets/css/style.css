@@ -339,10 +339,6 @@ header .navbar li a {
   }
 }
 
-header .navbar li.active {
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
 header .navbar li.active::before {
   background-color: #facc00;
 }
@@ -577,6 +573,10 @@ header .ellipsis::before {
 
 .social-links .youtube::before {
   content: "\f0e1";
+}
+
+.no-scroll {
+  overflow: hidden;
 }
 
 .banner {

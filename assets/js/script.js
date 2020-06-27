@@ -5,6 +5,7 @@ window.onload = function () {
 
 	if (page.classList.contains('home-page')) {
 		// for DOM manipulation
+		const html = document.querySelector('html');
 		const hamburger = document.querySelector('.hamburger');
 		const navbar = document.querySelector('.navbar');
 		const ellipsis = document.querySelector('.ellipsis');
@@ -34,6 +35,7 @@ window.onload = function () {
 		hamburger.addEventListener('click', () => {
 			hamburger.classList.toggle('active');
 			navbar.classList.toggle('active');
+			html.classList.toggle('no-scroll');
 		});
 
 		// function for closing the navbar on click of the navbar links
