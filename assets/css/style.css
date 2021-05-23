@@ -828,6 +828,7 @@ h3 + span a { color: #facc00; }
 .experience .year-content.active p {
   opacity: 1;
   transition: 1s ease-in-out;
+  padding: 10px 2% 0 0;
 }
 
 .contact {
