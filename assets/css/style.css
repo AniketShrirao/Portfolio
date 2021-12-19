@@ -482,6 +482,10 @@ header .ellipsis::before {
   background-attachment: fixed;
 }
 
+.banner .wrapper {
+  display: flex;
+}
+
 .banner .banner__content {
   width: 65%;
   margin: 0 auto;
@@ -591,17 +595,21 @@ header .ellipsis::before {
 }
 
 h3 {
-  color: #FFF;
-  font-size: 50px;
-  font-weight: 800;
+  color: #FFF !important;
+  font-size: 50px !important;
+  font-weight: 800 !important;
   text-transform: uppercase;
-  letter-spacing: 8px;
-  text-align: center;
+  letter-spacing: 8px !important;
+  text-align: center !important;
   -webkit-text-shadow: 5px 10px 15px rgba(0, 0, 0, 0.5);
   -moz-text-shadow: 5px 10px 15px rgba(0, 0, 0, 0.5);
   -ms-text-shadow: 5px 10px 15px rgba(0, 0, 0, 0.5);
   -o-text-shadow: 5px 10px 15px rgba(0, 0, 0, 0.5);
-  text-shadow: 5px 10px 15px rgba(0, 0, 0, 0.5);
+  text-shadow: 5px 10px 15px rgba(0, 0, 0, 0.5) !important;
+}
+
+.profile-badge__content-profile-name {
+  color: black !important;
 }
 
 h3 + span {
@@ -860,12 +868,12 @@ h3 + span a { color: #facc00; }
 .contact .contact-content > div { width: 45%; }
 
 .contact .contact-content > div h3 {
-  color: #FFF;
-  font-size: 30px;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  text-align: left;
+  color: #FFF !important;
+  font-size: 30px !important;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 2px !important;
+  text-align: left !important;
 }
 
 .contact .contact-content > div p {
@@ -947,7 +955,7 @@ h3 + span a { color: #facc00; }
   background-color: #facc00;
 }
 
-footer { background: #333B50; }
+footer { background: #333B50 !important; }
 
 footer ul {
   padding: 1.5% 0;
@@ -1072,12 +1080,14 @@ footer li a:hover::before { color: #facc00; }
   .social-links { display: none; }
 
   h3 {
-    font-size: 30px;
-    letter-spacing: 5px;
+    font-size: 30px !important;
+    letter-spacing: 5px !important;
   }
 
   h3 + span { font-size: 13px; }
   .banner { padding: 150px 0; }
+  .badge-base { margin: 100px auto 0; }
+  .banner .wrapper { flex-wrap: wrap; flex-direction: column; }
   .banner .banner__content span { font-size: 15px; }
   .banner .banner__content { width: 100%; }
 
